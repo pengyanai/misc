@@ -1,6 +1,6 @@
 name: Global AI Availability Pack
 desc: >
-  Check regional availability for ChatGPT (Web/App), Claude, Grok, YouTube Premium, and Netflix in one collapsed tiles pack.
+  Quick checks for ChatGPT, Claude, Grok, YouTube, and Netflix availability.
 
 tiles:
   - name: ChatGPT-Web-Check
