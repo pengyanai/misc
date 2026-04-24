@@ -15,7 +15,7 @@ async function main() {
 
   if (error) {
     $done({
-      content: "Network Error",
+      content: "NetErr",
       backgroundColor: "",
     });
     return;
@@ -23,7 +23,7 @@ async function main() {
 
   if (data.toLowerCase().includes("disallowed isp")) {
     $done({
-      content: "Disallowed ISP",
+      content: "ISP Block",
       backgroundColor: "",
     });
     return;

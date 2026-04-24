@@ -45,8 +45,8 @@ async function main() {
   let location = json.city || json.region || json.country || "";
   let org = json.asOrganization || "";
 
-  if (!location) location = isChinese() ? "未知区域" : "Unknown";
-  if (!org) org = isChinese() ? "未知运营商" : "Unknown";
+  if (!location) location = isChinese() ? "未知区域" : "Unknownnown";
+  if (!org) org = isChinese() ? "未知运营商" : "Unknownnown";
 
   const separator = " - ";
   const text = `${location}${separator}${org}`;

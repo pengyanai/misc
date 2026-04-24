@@ -15,7 +15,7 @@ async function main() {
 
   if (error) {
     $done({
-      content: "Network Error",
+      content: "NetErr",
       backgroundColor: "",
     });
     return;
@@ -23,7 +23,7 @@ async function main() {
 
   if (data.toLowerCase().includes("unsupported_country")) {
     $done({
-      content: "Unsupported Country",
+      content: "Blocked",
       backgroundColor: "",
     });
     return;
