@@ -1,6 +1,6 @@
 name: Global AI Availability Pack
 desc: >
-  Quick checks for ChatGPT, Claude, Grok, YouTube, and Netflix availability.
+  Quick checks for AI and streaming availability across major services.
 
 tiles:
   - name: ChatGPT-Web-Check
@@ -33,6 +33,26 @@ tiles:
     icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/grok.png
     collapsed: true
     url: https://grok.com
+  - name: Gemini-Check
+    title: Gemini
+    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/gemini.png
+    collapsed: true
+    url: https://gemini.google.com
+  - name: Copilot-Check
+    title: Copilot
+    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/copilot.png
+    collapsed: true
+    url: https://copilot.microsoft.com
+  - name: Disney-Check
+    title: Disney+
+    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/disney.png
+    collapsed: true
+    url: https://www.disneyplus.com
+  - name: Spotify-Check
+    title: Spotify
+    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/spotify.png
+    collapsed: true
+    url: https://www.spotify.com
 
 script-providers:
   ChatGPT-Web-Check:
@@ -47,3 +67,11 @@ script-providers:
     url: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/script/claude.js
   Grok-Check:
     url: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/script/grok.js
+  Gemini-Check:
+    url: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/script/gemini.js
+  Copilot-Check:
+    url: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/script/copilot.js
+  Disney-Check:
+    url: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/script/disney.js
+  Spotify-Check:
+    url: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/script/spotify.js
