@@ -8,49 +8,50 @@ async function request(method, params) {
 }
 
 async function main() {
-  const { error, response, data } = await request(
-    "GET",
-    "https://www.youtube.com/premium"
-  );
+  const { error, response, data } = await request("GET", {
+    url: "https://www.youtube.com/premium",
+    headers: {
+      "User-Agent":
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+      "Accept-Language": "en",
+    },
+  });
 
   if (error) {
-    $done({
-      content: "NetErr",
-      backgroundColor: "",
-    });
+    $done({ content: "NetErr", backgroundColor: "" });
     return;
   }
+
+  const body = data || "";
+  const bodyLower = body.toLowerCase();
 
   if (
-    data
-      .toLowerCase()
-      .includes("youtube premium is not available in your country")
+    bodyLower.includes("premium is not available in your country") ||
+    bodyLower.includes("youtube premium is not available in your country")
   ) {
-    $done({
-      content: "Not Available",
-      backgroundColor: "",
-    });
+    $done({ content: "Not Available", backgroundColor: "" });
     return;
   }
 
-  if (data.toLowerCase().includes("ad-free")) {
-    $done({
-      content: `Available`,
-      backgroundColor: "#FF0000",
-    });
+  let country = "";
+  const glMatch = body.match(/"GL"\s*:\s*"([A-Z]{2})"/);
+  if (glMatch) {
+    country = glMatch[1];
+  }
+
+  if (bodyLower.includes("ad-free")) {
+    const label = country ? `Available (${country})` : "Available";
+    $done({ content: label, backgroundColor: "#FF0000" });
     return;
   }
 
-  $done({
-    content: "Unknown",
-    backgroundColor: "",
-  });
+  $done({ content: "Unknown", backgroundColor: "" });
 }
 
 (async () => {
   main()
     .then((_) => {})
-    .catch((error) => {
+    .catch((_) => {
       $done({});
     });
 })();
