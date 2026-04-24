@@ -21,6 +21,16 @@ tiles:
     icon: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/img/netflix.png
     collapsed: true
     url: https://www.netflix.com
+  - name: Claude-Check
+    title: Claude
+    icon: https://cdn.simpleicons.org/claude/CC785C
+    collapsed: true
+    url: https://claude.ai
+  - name: Grok-Check
+    title: Grok
+    icon: https://cdn.simpleicons.org/x
+    collapsed: true
+    url: https://grok.com
 
 script-providers:
   ChatGPT-Web-Check:
@@ -31,3 +41,7 @@ script-providers:
     url: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/script/youtube.js
   Netflix-Check:
     url: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/script/netflix.js
+  Claude-Check:
+    url: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/script/claude.js
+  Grok-Check:
+    url: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/script/grok.js
