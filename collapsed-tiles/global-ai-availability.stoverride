@@ -25,12 +25,12 @@ tiles:
     url: https://www.netflix.com
   - name: Claude-Check
     title: Claude
-    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/claude.png
+    icon: https://cdn.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/claude.png
     collapsed: true
     url: https://claude.ai
   - name: Grok-Check
     title: Grok
-    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/grok.png
+    icon: https://cdn.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/grok.png
     collapsed: true
     url: https://grok.com
   - name: Gemini-Check
@@ -45,7 +45,7 @@ tiles:
     url: https://copilot.microsoft.com
   - name: Disney-Check
     title: Disney+
-    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/disney.png
+    icon: https://cdn.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/disney.png
     collapsed: true
     url: https://www.disneyplus.com
   - name: Spotify-Check
