@@ -25,12 +25,12 @@ tiles:
     url: https://www.netflix.com
   - name: Claude-Check
     title: Claude
-    icon: https://raw.githubusercontent.com/pengyanai/misc/main/collapsed-tiles/img/claude.png
+    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/claude.png
     collapsed: true
     url: https://claude.ai
   - name: Grok-Check
     title: Grok
-    icon: https://raw.githubusercontent.com/pengyanai/misc/main/collapsed-tiles/img/grok.png
+    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/grok.png
     collapsed: true
     url: https://grok.com
 
