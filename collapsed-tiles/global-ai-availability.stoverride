@@ -1,4 +1,6 @@
-name: Collapsed Tiles Example
+name: Global AI Availability Pack
+desc: >
+  Check regional availability for ChatGPT (Web/App), Claude, Grok, YouTube Premium, and Netflix in one collapsed tiles pack.
 
 tiles:
   - name: ChatGPT-Web-Check
@@ -23,12 +25,12 @@ tiles:
     url: https://www.netflix.com
   - name: Claude-Check
     title: Claude
-    icon: https://cdn.simpleicons.org/claude/CC785C
+    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/claude.png
     collapsed: true
     url: https://claude.ai
   - name: Grok-Check
     title: Grok
-    icon: https://cdn.simpleicons.org/x
+    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/grok.png
     collapsed: true
     url: https://grok.com
 
