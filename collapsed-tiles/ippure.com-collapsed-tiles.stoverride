@@ -5,17 +5,17 @@ desc: >
 
 tiles:
   - name: IPPure-IP-Info
-    title: IPPure IP Info
+    title: IP Info
     icon: https://ippure.com/logo.png
     collapsed: true
     url: https://ippure.com
   - name: IPPure-IP-Fraud-Score
-    title: IPPure IP Fraud Score
+    title: Fraud Score
     icon: https://ippure.com/logo.png
     collapsed: true
     url: https://ippure.com
   - name: IPPure-IP-Native-Check
-    title: IPPure IP Native Check
+    title: IP Native
     icon: https://ippure.com/logo.png
     collapsed: true
     url: https://ippure.com
