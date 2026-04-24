@@ -18,7 +18,7 @@ async function main() {
   });
 
   if (error) {
-    $done({ content: "NetErr", backgroundColor: "" });
+    $done({ content: "Network Error", backgroundColor: "" });
     return;
   }
 
