@@ -7,9 +7,10 @@
 | AI 服务 | 流媒体 |
 |---------|--------|
 | ChatGPT (Web / App) | YouTube |
-| Claude | Netflix |
-| Gemini | Disney+ |
-| Grok | Spotify |
+| Codex | Netflix |
+| Claude | Disney+ |
+| Gemini | Spotify |
+| Grok | |
 | Copilot | |
 
 ## 使用方法
@@ -40,4 +41,4 @@ https://jsd.onmicrosoft.cn/gh/pengyanai/misc@main/collapsed-tiles/global-ai-avai
 
 ## 致谢
 
-基于上游 [StashNetworks/misc](https://github.com/StashNetworks/misc) 开发，新增了 Claude、Grok、Gemini、Copilot、Disney+、Spotify 检测，并改进了 YouTube 和 Spotify 的检测逻辑。
+基于上游 [StashNetworks/misc](https://github.com/StashNetworks/misc) 开发，新增了 Codex、Claude、Grok、Gemini、Copilot、Disney+、Spotify 检测，并改进了 YouTube 和 Spotify 的检测逻辑。
