@@ -16,7 +16,7 @@ async function main() {
   if (error) {
     $done({
       content: "Network Error",
-      backgroundColor: "",
+      backgroundColor: "#999999",
     });
     return;
   }
@@ -24,7 +24,7 @@ async function main() {
   if (data.toLowerCase().includes("disallowed isp")) {
     $done({
       content: "ISP Block",
-      backgroundColor: "",
+      backgroundColor: "#555555",
     });
     return;
   }
@@ -32,14 +32,14 @@ async function main() {
   if (data.toLowerCase().includes("been blocked")) {
     $done({
       content: "Blocked",
-      backgroundColor: "",
+      backgroundColor: "#1A1A1A",
     });
     return;
   }
 
   $done({
     content: `Available`,
-    backgroundColor: "#88A788",
+    backgroundColor: "#E8E8E8",
   });
 }
 
