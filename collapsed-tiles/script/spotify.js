@@ -9,7 +9,7 @@ async function request(method, params) {
 
 async function main() {
   const { error, response, data } = await request("GET", {
-    url: "https://www.spotify.com/premium/",
+    url: "https://spclient.wg.spotify.com/signup/public/v1/account?validate=1&email=test%40test.com",
     headers: {
       "User-Agent":
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
@@ -22,36 +22,32 @@ async function main() {
     return;
   }
 
+  const status = response?.status || response?.statusCode || 0;
   const body = data || "";
-  const bodyLower = body.toLowerCase();
 
-  if (
-    bodyLower.includes("spotify is currently not available in your country") ||
-    bodyLower.includes("isn't available in your country") ||
-    bodyLower.includes("spotify is not available in your country")
-  ) {
-    $done({ content: "N/A", backgroundColor: "" });
+  let json;
+  try {
+    json = JSON.parse(body);
+  } catch (e) {
+    json = null;
+  }
+
+  if (!json) {
+    $done({ content: `Error (${status})`, backgroundColor: "" });
     return;
   }
 
-  let country = "";
-  const urlMatch = body.match(
-    /spotify\.com\/([a-z]{2})(?:-[a-z]+)?\/premium/i
-  );
-  if (urlMatch) {
-    country = urlMatch[1].toUpperCase();
+  const country = json.country || "";
+  const launched = json.is_country_launched;
+
+  if (launched === false) {
+    const label = country ? `N/A (${country})` : "N/A";
+    $done({ content: label, backgroundColor: "" });
+    return;
   }
 
   if (country) {
     $done({ content: `Available (${country})`, backgroundColor: "#1DB954" });
-    return;
-  }
-
-  if (
-    bodyLower.includes("premium individual") ||
-    bodyLower.includes("premium student")
-  ) {
-    $done({ content: "Available", backgroundColor: "#1DB954" });
     return;
   }
 

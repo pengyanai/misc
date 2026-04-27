@@ -22,30 +22,33 @@ async function main() {
     return;
   }
 
-  const body = data || "";
-  const bodyLower = body.toLowerCase();
-
-  if (
-    bodyLower.includes("premium is not available in your country") ||
-    bodyLower.includes("youtube premium is not available in your country")
-  ) {
-    $done({ content: "Not Available", backgroundColor: "" });
+  const status = response?.status || response?.statusCode || 0;
+  if (status >= 400) {
+    $done({ content: `Error (${status})`, backgroundColor: "" });
     return;
   }
+
+  const body = data || "";
 
   let country = "";
   const glMatch = body.match(/"GL"\s*:\s*"([A-Z]{2})"/);
   if (glMatch) {
     country = glMatch[1];
+  } else if (body.indexOf("www.google.cn") !== -1) {
+    country = "CN";
   }
 
-  if (bodyLower.includes("ad-free")) {
-    const label = country ? `Available (${country})` : "Available";
-    $done({ content: label, backgroundColor: "#FF0000" });
+  if (country) {
+    $done({ content: `Available (${country})`, backgroundColor: "#FF0000" });
     return;
   }
 
-  $done({ content: "Unknown", backgroundColor: "" });
+  if (body.length > 800) {
+    $done({ content: "Available", backgroundColor: "#FF0000" });
+    return;
+  }
+
+  $done({ content: "Failed", backgroundColor: "" });
 }
 
 (async () => {
