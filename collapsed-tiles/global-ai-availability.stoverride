@@ -67,7 +67,7 @@ script-providers:
   Codex-Check:
     url: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/script/codex.js
   YouTube-Check:
-    url: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/script/youtube.js
+    url: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/script/youtube.js
   Netflix-Check:
     url: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/script/netflix.js
   Claude-Check:
