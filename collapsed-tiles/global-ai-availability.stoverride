@@ -2,6 +2,7 @@ name: Global Availability Pack
 desc: >
   Quick checks for AI and streaming service availability and exit region.
   AI tiles first (same order as ai-availability), then streaming (same as streaming pack).
+  Same bundle as global.stoverride; kept under this filename for older install links.
 
 tiles:
   - name: ChatGPT-Check
