@@ -1,0 +1,35 @@
+name: Streaming Availability Pack
+desc: >
+  Quick checks for streaming service availability and exit region.
+
+tiles:
+  - name: YouTube-Check
+    title: YouTube
+    icon: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/img/youtube.png
+    collapsed: true
+    url: https://www.youtube.com
+  - name: Netflix-Check
+    title: Netflix
+    icon: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/img/netflix.png
+    collapsed: true
+    url: https://www.netflix.com
+  - name: Disney-Check
+    title: Disney+
+    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/disney.png
+    collapsed: true
+    url: https://www.disneyplus.com
+  - name: Spotify-Check
+    title: Spotify
+    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/spotify.png
+    collapsed: true
+    url: https://www.spotify.com
+
+script-providers:
+  YouTube-Check:
+    url: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/script/youtube.js
+  Netflix-Check:
+    url: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/script/netflix.js
+  Disney-Check:
+    url: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/script/disney.js
+  Spotify-Check:
+    url: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/script/spotify.js

@@ -23,7 +23,7 @@ async function main() {
     return;
   }
 
-  $done({ content: "Available", backgroundColor: "#88A788" });
+  $done({ content: "Available", backgroundColor: "#202123" });
 }
 
 (async () => {

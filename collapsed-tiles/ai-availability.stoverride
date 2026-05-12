@@ -1,0 +1,49 @@
+name: AI Availability Pack
+desc: >
+  Quick checks for AI service availability across major providers.
+
+tiles:
+  - name: ChatGPT-Check
+    title: ChatGPT
+    icon: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/img/chatgpt.png
+    collapsed: true
+    url: https://chatgpt.com
+  - name: Codex-Check
+    title: Codex
+    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/codex.png
+    collapsed: true
+    url: https://chatgpt.com/codex
+  - name: Claude-Check
+    title: Claude
+    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/claude.png
+    collapsed: true
+    url: https://claude.ai
+  - name: Grok-Check
+    title: Grok
+    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/grok.png
+    collapsed: true
+    url: https://grok.com
+  - name: Gemini-Check
+    title: Gemini
+    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/gemini.png
+    collapsed: true
+    url: https://gemini.google.com
+  - name: Copilot-Check
+    title: Copilot
+    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/copilot.png
+    collapsed: true
+    url: https://copilot.microsoft.com
+
+script-providers:
+  ChatGPT-Check:
+    url: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/script/chatgpt.js
+  Codex-Check:
+    url: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/script/codex.js
+  Claude-Check:
+    url: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/script/claude.js
+  Grok-Check:
+    url: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/script/grok.js
+  Gemini-Check:
+    url: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/script/gemini.js
+  Copilot-Check:
+    url: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/script/copilot.js
